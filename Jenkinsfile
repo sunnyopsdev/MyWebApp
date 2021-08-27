@@ -7,11 +7,10 @@ pipeline {
 	stages{
 	
 		stage ('clean')
-		{
-		
+		{		
 			steps
 			{
-				mvn clean
+				/usr/bin/mvn clean
 			}
 		
 		}
