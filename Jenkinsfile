@@ -20,7 +20,7 @@ pipeline {
 			stage ('dev') {
 			
 				steps{			
-					mvn compile -Denv=dev				
+					mvn compile -Denv="dev"				
 				}
 		
 			}
