@@ -15,25 +15,15 @@ pipeline {
 			}
 		
 		}
-		parallel {
+
 		
 			stage ('dev') {
 			
 				steps{			
-					mvn compile -Denv="dev"				
+					echo "it is dev build "			
 				}
 		
 			}
-			
-			stage ('qa') {
-				steps{			
-					mvn compile -Denv=qa				
-				}
-			
-			}
-		
-		}
-
-	
+				
 	}
 }
