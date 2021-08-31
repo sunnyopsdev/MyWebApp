@@ -12,14 +12,13 @@ pipeline {
 			{
 				sh "/usr/bin/mvn clean verify"
 			}
-		
 		}
 
 		
 			stage ('dev') {
 			
 				steps{			
-					echo "it is dev build "			
+					sh "/usr/bin/mvn compile install"		
 				}
 		
 			}
